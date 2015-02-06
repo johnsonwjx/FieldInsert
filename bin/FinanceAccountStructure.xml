@@ -1,0 +1,7190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<table name="FINANCE_ACCOUNT" cname="账户表" fathertablename=""
+		Mode="0" authmode="0" keyfieldname="CORPID,AC_CODE"
+		groupkeyfield="">
+		<field>
+			<name>ID</name>
+			<cname>账户ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JTACCOUNT_YEAR</name>
+			<cname>集团账户年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_UPCODE</name>
+			<cname>上级账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>AC_LISTCODE</name>
+			<cname>账户目录代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_LISTNAME</name>
+			<cname>账户目录名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>外币名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>QUAN_UNIT</name>
+			<cname>数量单位</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_KIND</name>
+			<cname>账户性质</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NBJYBZ</name>
+			<cname>内部交易标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_SIACNUM</name>
+			<cname>专项核算个数</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AC_CASHTYPE</name>
+			<cname>出纳类型</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_RECONBZ</name>
+			<cname>对账标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_DIARYBZ</name>
+			<cname>日记账标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISCORP_DATA</name>
+			<cname>是否为集团账户</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_SUBADDBZ</name>
+			<cname>集团账户是否能增加下级</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_FLOORBZ</name>
+			<cname>底层标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_STATUS</name>
+			<cname>账户状态</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_YEARACCOUNT" cname="账户年初结余台账表"
+		fathertablename="" Mode="0" authmode="0" groupkeyfield=""
+		keyfieldname="CORPID,BUSINESS_YEAR,AC_CODE,AC_TYPE">
+		<field>
+			<name>ID</name>
+			<cname>唯一ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_UPCODE</name>
+			<cname>上级账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>AC_LISTCODE</name>
+			<cname>账户目录代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_LISTNAME</name>
+			<cname>账户目录名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_KIND</name>
+			<cname>账户性质</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NBJYBZ</name>
+			<cname>内部交易标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_TYPE</name>
+			<cname>账本类型</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>外币名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>QUAN_UNIT</name>
+			<cname>数量单位</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_SUMDEAMT</name>
+			<cname>月度借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_SUMCRAMT</name>
+			<cname>月度贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_CRDR</name>
+			<cname>年初余额方向</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_BALANCE</name>
+			<cname>年初余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_BALANCE_BANK</name>
+			<cname>银行年初余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT01</name>
+			<cname>01月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT01</name>
+			<cname>01月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT02</name>
+			<cname>02月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT02</name>
+			<cname>02月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT03</name>
+			<cname>03月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT03</name>
+			<cname>03月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT04</name>
+			<cname>04月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT04</name>
+			<cname>04月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT05</name>
+			<cname>05月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT05</name>
+			<cname>05月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT06</name>
+			<cname>06月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT06</name>
+			<cname>06月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT07</name>
+			<cname>07月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT07</name>
+			<cname>07月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT08</name>
+			<cname>08月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT08</name>
+			<cname>08月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT09</name>
+			<cname>09月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT09</name>
+			<cname>09月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT10</name>
+			<cname>10月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT10</name>
+			<cname>10月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT11</name>
+			<cname>11月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT11</name>
+			<cname>11月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT12</name>
+			<cname>12月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT12</name>
+			<cname>12月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AC_FLOORBZ</name>
+			<cname>底层标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_STATUS</name>
+			<cname>账户状态</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_SIACTYPE" cname="专项核算类型表" fathertablename=""
+		Mode="1" authmode="0;1" keyfieldname="CORPID,BUSINESS_YEAR,SIACTYPE_CODE"
+		groupkeyfield="CORPID,BUSINESS_YEAR">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISCORP_DATA</name>
+			<cname>是否为集团数据</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE</name>
+			<cname>专项核算类型编码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME</name>
+			<cname>专项核算类型名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_BMGZ</name>
+			<cname>专项核算对象编码规则</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_SHOWSTYLE</name>
+			<cname>专项核算对象显示方式</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>SOURCE_CODE</name>
+			<cname>账本来源代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_SERVER</name>
+			<cname>账本来源通用业务服务名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_TABLE_EN</name>
+			<cname>账本来源数据表英文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_TABLE_CN</name>
+			<cname>账本来源数据表中文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDCODE_EN</name>
+			<cname>与账本对象代码对应字段英文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDCODE_CN</name>
+			<cname>与账本对象代码对应字段中文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDNAME_EN</name>
+			<cname>与账本对象名称对应字段英文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDNAME_CN</name>
+			<cname>与账本对象名称对应字段中文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDUPCODE_EN</name>
+			<cname>与账本对象上级代码对应字段英文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDUPCODE_CN</name>
+			<cname>与账本对象上级代码对应字段中文名</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_FDISLEAF</name>
+			<cname>与账本对象底层标志对应字段</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>SOURCE_TJSTR_EN</name>
+			<cname>专项核算选择过滤条件串</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_TJSTR_CN</name>
+			<cname>专项核算选择过滤条件串中文解释</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_CONDIT</name>
+			<cname>来源表其它选择条件</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注信息</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>IS_VISIBLE</name>
+			<cname>是否可见</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_SIACOBJ" cname="自定义专项核算对象表" fathertablename=""
+		mode="0" keyfieldname="CORPID,BUSINESS_YEAR,SIACTYPE_CODE,SIACOBJ_CODE" groupkeyfield="CORPID,BUSINESS_YEAR,SIACTYPE_CODE" authmode="0;1">
+		<field>
+			<name>ID</name>
+			<cname>代码数据ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE</name>
+			<cname>专项核算类型代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME</name>
+			<cname>专项核算类型名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE</name>
+			<cname>专项核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME</name>
+			<cname>专项核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_PATH</name>
+			<cname>专项核算对象全路径</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_PARENTCODE</name>
+			<cname>专项核算对象上级代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_PARENTPATH</name>
+			<cname>专项核算对象上级全路径</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_STATUS</name>
+			<cname>专项核算对象状态</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_ISLEAF</name>
+			<cname>底层标志</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注信息</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR1</name>
+			<cname>辅助字符1</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR2</name>
+			<cname>辅助字符2</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR3</name>
+			<cname>辅助字符3</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR4</name>
+			<cname>辅助字符4</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR5</name>
+			<cname>辅助字符5</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR6</name>
+			<cname>辅助字符6</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR7</name>
+			<cname>辅助字符7</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR8</name>
+			<cname>辅助字符8</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR9</name>
+			<cname>辅助字符9</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR10</name>
+			<cname>辅助字符10</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR11</name>
+			<cname>辅助字符11</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR12</name>
+			<cname>辅助字符12</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR13</name>
+			<cname>辅助字符13</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR14</name>
+			<cname>辅助字符14</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR15</name>
+			<cname>辅助字符15</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR16</name>
+			<cname>辅助字符16</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR17</name>
+			<cname>辅助字符17</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR18</name>
+			<cname>辅助字符18</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR19</name>
+			<cname>辅助字符19</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR20</name>
+			<cname>辅助字符20</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT1</name>
+			<cname>辅助数值1</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT2</name>
+			<cname>辅助数值2</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT3</name>
+			<cname>辅助数值3</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT4</name>
+			<cname>辅助数值4</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT5</name>
+			<cname>辅助数值5</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT6</name>
+			<cname>辅助数值6</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT7</name>
+			<cname>辅助数值7</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT8</name>
+			<cname>辅助数值8</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_SIACTYPE_DYAC" cname="专项核算与账户对应关系表"
+		fathertablename="" Mode="0" authmode="0;1"
+		keyfieldname="CORPID,BUSINESS_YEAR,AC_CODE,SIACTYPE_CODE" groupkeyfield="CORPID,BUSINESS_YEAR">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISCORP_DATA</name>
+			<cname>是否为集团数据</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_KIND</name>
+			<cname>账户性质</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>SIACTYPE_CODE</name>
+			<cname>专项核算类型编码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME</name>
+			<cname>专项核算类型名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_XH</name>
+			<cname>专项核算交叉序号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_UPCHECK</name>
+			<cname>专项核算上级检验标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>	
+		<field>
+			<name>STATUS</name>
+			<cname>状态标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>	
+	</table>
+	<table name="FINANCE_SIACTYPE_CROSS" cname="需交叉的专项核算对应关系表"
+		fathertablename="" Mode="0" authmode="0"
+		keyfieldname="CORPCODE,BUSINESS_YEAR,AC_CODE,SIACTYPE_CODE_A,SIACTYPE_CODE_B"
+		groupkeyfield="">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISCORP_DATA</name>
+			<cname>是否为集团数据</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE_A</name>
+			<cname>专项核算类型代码(交叉1)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME_A</name>
+			<cname>专项核算类型(交叉1)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE_B</name>
+			<cname>专项核算类型代码(交叉2)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME_B</name>
+			<cname>专项核算类型(交叉2)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_YEARACCOUNT_SIAC" cname="专项核算年初结余台账表"
+		fathertablename="" Mode="0" authmode="0;2" 
+		groupkeyfield="CORPID,BUSINESS_YEAR,AC_CODE,SIACTYPE_CODE_A,SIACTYPE_CODE_B,ISLEAF" 
+		keyfieldname="CORPID,BUSINESS_YEAR,AC_CODE,SIACTYPE_CODE_A,SIACOBJ_CODE_A,SIACTYPE_CODE_B,SIACOBJ_CODE_B,SIACTYPE_CODE_C,SIACOBJ_CODE_C">
+		<field>
+			<name>ID</name>
+			<cname>唯一ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE_A</name>
+			<cname>核算核算类型(交叉1)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_A</name>
+			<cname>核算对象代码(交叉1)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_A</name>
+			<cname>核算对象名称(交叉1)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_UPCODE_A</name>
+			<cname>核算对象上级代码(交叉1)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE_B</name>
+			<cname>核算核算类型(交叉2)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_B</name>
+			<cname>核算对象代码(交叉2)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_B</name>
+			<cname>核算对象名称(交叉2)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_UPCODE_B</name>
+			<cname>核算对象上级代码(交叉2)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE_C</name>
+			<cname>核算核算类型(交叉3)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_C</name>
+			<cname>核算对象代码(交叉3)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_C</name>
+			<cname>核算对象名称(交叉3)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_UPCODE_C</name>
+			<cname>核算对象上级代码(交叉3)</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_SUMDEAMT</name>
+			<cname>年初累计借方发生值</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_SUMCRAMT</name>
+			<cname>年初累计贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_CRDR</name>
+			<cname>年初余额方向</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>YEARBEG_BALANCE</name>
+			<cname>年初余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT01</name>
+			<cname>01月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT01</name>
+			<cname>01月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT02</name>
+			<cname>02月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT02</name>
+			<cname>02月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT03</name>
+			<cname>03月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT03</name>
+			<cname>03月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT04</name>
+			<cname>04月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT04</name>
+			<cname>04月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT05</name>
+			<cname>05月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT05</name>
+			<cname>05月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT06</name>
+			<cname>06月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT06</name>
+			<cname>06月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT07</name>
+			<cname>07月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT07</name>
+			<cname>07月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT08</name>
+			<cname>08月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT08</name>
+			<cname>08月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT09</name>
+			<cname>09月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT09</name>
+			<cname>09月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT10</name>
+			<cname>10月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT10</name>
+			<cname>10月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT11</name>
+			<cname>11月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_CRAMT11</name>
+			<cname>11月月贷方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MONTH_DEAMT12</name>
+			<cname>12月借方发生额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>UPDATE_STATUS</name>
+			<cname>是否刷新专项数据</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISLEAF</name>
+			<cname>是否最底层</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>	
+		<field>
+			<name>CLASSMX_CHAR1</name>
+			<cname>辅助字符1</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR2</name>
+			<cname>辅助字符2</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR3</name>
+			<cname>辅助字符3</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR4</name>
+			<cname>辅助字符4</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR5</name>
+			<cname>辅助字符5</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR6</name>
+			<cname>辅助字符6</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR7</name>
+			<cname>辅助字符7</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR8</name>
+			<cname>辅助字符8</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR9</name>
+			<cname>辅助字符9</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR10</name>
+			<cname>辅助字符10</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR11</name>
+			<cname>辅助字符11</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR12</name>
+			<cname>辅助字符12</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR13</name>
+			<cname>辅助字符13</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR14</name>
+			<cname>辅助字符14</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR15</name>
+			<cname>辅助字符15</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR16</name>
+			<cname>辅助字符16</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR17</name>
+			<cname>辅助字符17</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR18</name>
+			<cname>辅助字符18</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR19</name>
+			<cname>辅助字符19</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_CHAR20</name>
+			<cname>辅助字符20</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>	
+		<field>
+			<name>CLASSMX_FLOAT1</name>
+			<cname>辅助数值1</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT2</name>
+			<cname>辅助数值2</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT3</name>
+			<cname>辅助数值3</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT4</name>
+			<cname>辅助数值4</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT5</name>
+			<cname>辅助数值5</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT6</name>
+			<cname>辅助数值6</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT7</name>
+			<cname>辅助数值7</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CLASSMX_FLOAT8</name>
+			<cname>辅助数值8</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>UPDATE_SPSTRING</name>
+			<cname>刷新数据辅助字符</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_STATUS</name>
+			<cname>核算对象状态</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUMBLIST" cname="自动转账凭证模板目录表" fathertablename=""
+		groupkeyfield="" Mode="0" authmode="0" keyfieldname="CORPID,BUSINESS_YEAR,MODEL_TYPE,MODEL_CODE">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISCORP_DATA</name>
+			<cname>是否为集团账户</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_NO</name>
+			<cname>模板序号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_NAME</name>
+			<cname>模板名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_TYPE</name>
+			<cname>模板类型</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_CODE</name>
+			<cname>对应的凭证类型代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_NAME</name>
+			<cname>对应的凭证类型名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注信息</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STATUS</name>
+			<cname>状态</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISLEAF</name>
+			<cname>是否为最底层</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUMBDETAIL" cname="自动转账凭证模板内容表"
+		fathertablename="" groupkeyfield="CORPID,BUSINESS_YEAR,MODEL_TYPE,MODEL_CODE" Mode="1" authmode="1" keyfieldname="">
+		<field>
+			<name>ID</name>
+			<cname>唯一ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_TYPE</name>
+			<cname>模板类型</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLDETAIL_ID</name>
+			<cname>凭证模板分录明细BILLDETAIL_ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ITEMNO</name>
+			<cname>序号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_KIND</name>
+			<cname>账户性质</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NBJYBZ</name>
+			<cname>内部交易标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_FLOORBZ</name>
+			<cname>底层标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>外币名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>QUAN_UNIT</name>
+			<cname>数量单位</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>CRDR</name>
+			<cname>方向</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CORNO</name>
+			<cname>对应号</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_VOUCHEXP_EN</name>
+			<cname>分录摘要公式</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_VOUCHEXP_CN</name>
+			<cname>分录摘要中文解释</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AMT_EN</name>
+			<cname>本位币公式</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AMT_CN</name>
+			<cname>本位币公式中文解释</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AMT_TJ</name>
+			<cname>本位币取值条件</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_FCAMT_EN</name>
+			<cname>外币公式</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_FCAMT_CN</name>
+			<cname>外币公式中文解释</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_FCAMT_TJ</name>
+			<cname>外币公式取值条件</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_QUAN_EN</name>
+			<cname>数量公式</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_QUAN_TJ</name>
+			<cname>数量公式取值条件</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_QUAN_CN</name>
+			<cname>数量公式中文解释</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_01</name>
+			<cname>(专项1)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+	    </field>
+		<field>
+			<name>SIACOBJ_NAME_01</name>
+			<cname>(专项1)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_02</name>
+			<cname>(专项2)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_02</name>
+			<cname>(专项2)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_03</name>
+			<cname>(专项3)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_03</name>
+			<cname>(专项3)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_04</name>
+			<cname>(专项4)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_04</name>
+			<cname>(专项4)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_05</name>
+			<cname>(专项5)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_05</name>
+			<cname>(专项5)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_06</name>
+			<cname>(专项6)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_06</name>
+			<cname>(专项6)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_07</name>
+			<cname>(专项7)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_07</name>
+			<cname>(专项7)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_08</name>
+			<cname>(专项8)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_08</name>
+			<cname>(专项8)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_09</name>
+			<cname>(专项9)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_09</name>
+			<cname>(专项9)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_10</name>
+			<cname>(专项10)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_10</name>
+			<cname>(专项10)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_11</name>
+			<cname>(专项11)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_11</name>
+			<cname>(专项11)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_12</name>
+			<cname>(专项12)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_12</name>
+			<cname>(专项12)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_13</name>
+			<cname>(专项13)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_13</name>
+			<cname>(专项13)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_14</name>
+			<cname>(专项14)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_14</name>
+			<cname>(专项14)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_15</name>
+			<cname>(专项15)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_15</name>
+			<cname>(专项15)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_16</name>
+			<cname>(专项16)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_16</name>
+			<cname>(专项16)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_17</name>
+			<cname>(专项17)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_17</name>
+			<cname>(专项17)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_18</name>
+			<cname>(专项18)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_18</name>
+			<cname>(专项18)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_19</name>
+			<cname>(专项19)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_19</name>
+			<cname>(专项19)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_20</name>
+			<cname>(专项20)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_20</name>
+			<cname>(专项20)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_21</name>
+			<cname>(专项21)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_21</name>
+			<cname>(专项21)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_22</name>
+			<cname>(专项22)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_22</name>
+			<cname>(专项22)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_23</name>
+			<cname>(专项23)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_23</name>
+			<cname>(专项23)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_24</name>
+			<cname>(专项24)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_24</name>
+			<cname>(专项24)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_25</name>
+			<cname>(专项25)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_25</name>
+			<cname>(专项25)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_26</name>
+			<cname>(专项26)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_26</name>
+			<cname>(专项26)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_27</name>
+			<cname>(专项27)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_27</name>
+			<cname>(专项27)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_28</name>
+			<cname>(专项28)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_28</name>
+			<cname>(专项28)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_29</name>
+			<cname>(专项29)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_29</name>
+			<cname>(专项29)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_30</name>
+			<cname>(专项30)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_30</name>
+			<cname>(专项30)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_31</name>
+			<cname>(专项31)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_31</name>
+			<cname>(专项31)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_32</name>
+			<cname>(专项32)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_32</name>
+			<cname>(专项32)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_33</name>
+			<cname>(专项33)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_33</name>
+			<cname>(专项33)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_34</name>
+			<cname>(专项34)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_34</name>
+			<cname>(专项34)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_35</name>
+			<cname>(专项35)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_35</name>
+			<cname>(专项35)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODEALLSTR</name>
+			<cname>当前账户所有专项对象代码值</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAMEALLSTR</name>
+			<cname>当前账户所有专项对象信息值</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_PATHALLSTR</name>
+			<cname>当前账户所有专项对象路径信息值</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_VIEWALLSTR</name>
+			<cname>当前账户所有专项类型描述</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_BVOUMBLIST" cname="业务凭证模板目录表" fathertablename="" mode="0" keyfieldname="CORPID,BUSINESS_YEAR,MODEL_CODE" 
+		groupkeyfield="" authmode="0">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISCORP_DATA</name>
+			<cname>是否为集团账户</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_NO</name>
+			<cname>模板序号</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_NAME</name>
+			<cname>模板名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_ATTR</name>
+			<cname>模板属性</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORM_CLASSID</name>
+			<cname>表单类id</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_CODE</name>
+			<cname>业务体系编码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_NAME</name>
+			<cname>业务体系名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_CODE</name>
+			<cname>对应的凭证类型代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_NAME</name>
+			<cname>对应的凭证类型名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AFFIXNUM_EN</name>
+			<cname>附件个数公式</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AFFIXNUM_CN</name>
+			<cname>附件个数中文解释</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注信息</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STATUS</name>
+			<cname>状态</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ISLEAF</name>
+			<cname>是否为最底层</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_BVOUMBDETAIL" cname="业务凭证模板内容表" fathertablename="" mode="1" 
+		keyfieldname="" groupkeyfield="CORPID,BUSINESS_YEAR,MODEL_CODE" authmode="1">
+		<field>
+			<name>ID</name>
+			<cname>唯一ID</cname>
+			<type>0</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLDETAIL_ID</name>
+			<cname>BILLDETAIL_ID</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ITEMNO</name>
+			<cname>序号</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_VOUCHEXP_EN</name>
+			<cname>摘要公式</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_VOUCHEXP_CN</name>
+			<cname>摘要中文解释</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_ACCODE_EN</name>
+			<cname>账户代码公式</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_ACCODE_CN</name>
+			<cname>账户代码公式中文解释</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CRDR</name>
+			<cname>方向</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CORNO</name>
+			<cname>对应号</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AMT_EN</name>
+			<cname>本位币公式</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_AMT_CN</name>
+			<cname>本位币公式中文解释</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_RECTJ_EN</name>
+			<cname>凭证分录取值条件</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORMULA_RECTJ_CN</name>
+			<cname>凭证分录取值条件</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_BVOUMBSIAC" cname="业务凭证模板专项核算来源表" fathertablename="" mode="1" keyfieldname="" groupkeyfield="CORPID,BUSINESS_YEAR,MODEL_CODE,VOUMB_DETAILID" authmode="1">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUMB_DETAILID</name>
+			<cname>对应的凭证模板分录明细ID</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE</name>
+			<cname>专项核算类型编码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME</name>
+			<cname>专项核算类型名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_CODE</name>
+			<cname>专项核算账本来源代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODELY_EN</name>
+			<cname>专项核算对象代码来源</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODELY_CN</name>
+			<cname>专项核算对象代码来源中文解释</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAMELY_EN</name>
+			<cname>专项核算对象名称来源</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAMELY_CN</name>
+			<cname>专项核算对象名称来源中文解释</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_BVOUMBVOUTYPE" cname="业务凭证模板凭证类型来源表" fathertablename="" mode="1" 
+		keyfieldname="" groupkeyfield="CORPID,BUSINESS_YEAR,MODEL_CODE" authmode="1">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_CODE</name>
+			<cname>对应的凭证类型代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_NAME</name>
+			<cname>对应的凭证类型名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INCLUDE_ACCODE</name>
+			<cname>需包含的账户代码</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INCLUDE_ACNAME</name>
+			<cname>需包含的账户名称</cname>
+			<type>2</type>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUINFO" cname="凭证信息主表" fathertablename=""
+		mode="0" keyfieldname="ID">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CODE</name>
+			<cname>表单流水号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>凭证ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MONNO</name>
+			<cname>凭证流水号</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>VOU_CODE</name>
+			<cname>凭证编号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_MONTH</name>
+			<cname>月份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_DAY</name>
+			<cname>天</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_CODE</name>
+			<cname>凭证类型代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_NAME</name>
+			<cname>凭证类型名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OFFSET_SIGN</name>
+			<cname>是否抵销凭证</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>业务凭证模板代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_NAME</name>
+			<cname>业务凭证模板名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CREATE_DATE</name>
+			<cname>制单日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CREATE_USERID</name>
+			<cname>制单人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CREATE_USERNAME</name>
+			<cname>制单人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUM_DEAMT</name>
+			<cname>借方金额合计</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>SUM_CRAMT</name>
+			<cname>贷方金额合计</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>SUM_ANNEXNUM</name>
+			<cname>附件张数</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHSTATUS</name>
+			<cname>流程完成状态</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_DATE</name>
+			<cname>出纳签字日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_USERID</name>
+			<cname>出纳ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_USERNAME</name>
+			<cname>出纳</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CHECK_DATE</name>
+			<cname>审核日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CHECK_USERID</name>
+			<cname>审核人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CHECK_USERNAME</name>
+			<cname>审核人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>POST_DATE</name>
+			<cname>记账日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>POST_USERID</name>
+			<cname>记账人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>POST_USERNAME</name>
+			<cname>记账人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CANCEL_DATE</name>
+			<cname>作废日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CANCEL_USERID</name>
+			<cname>作废人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CANCEL_USERNAME</name>
+			<cname>作废人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VERIFY_DATE</name>
+			<cname>对账日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VERIFY_USERID</name>
+			<cname>对账人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VERIFY_USERNAME</name>
+			<cname>对账人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>REDMELT_BILLID</name>
+			<cname>红字冲销原始凭证ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUDETAIL" cname="凭证信息明细表" fathertablename=""
+		Mode="0" keyfieldname="ID"	groupkeyfield="BILLID">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>凭证BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ITEMNO</name>
+			<cname>分录号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_KIND</name>
+			<cname>账户性质</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NBJYBZ</name>
+			<cname>内部交易标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_FLOORBZ</name>
+			<cname>底层标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CRDR</name>
+			<cname>方向</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AMT</name>
+			<cname>发生金额(本位币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>DEAMT</name>
+			<cname>借方金额(本位币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRAMT</name>
+			<cname>贷方金额(本位币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>外币名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AMT_RATE_FC</name>
+			<cname>外币汇率</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AMT_FC</name>
+			<cname>发生金额(外币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>DEAMT_FC</name>
+			<cname>借方金额(外币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRAMT_FC</name>
+			<cname>贷方金额(外币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>QUAN_UNIT</name>
+			<cname>数量单位</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>QUAN</name>
+			<cname>数量</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>DEQUAN</name>
+			<cname>借方数量</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRQUAN</name>
+			<cname>贷方数量</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>VOU_EXP</name>
+			<cname>凭证摘要</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOU_COLUMNMELT</name>
+			<cname>栏目冲销标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_01</name>
+			<cname>(专项1)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_01</name>
+			<cname>(专项1)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_02</name>
+			<cname>(专项2)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_02</name>
+			<cname>(专项2)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_03</name>
+			<cname>(专项3)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_03</name>
+			<cname>(专项3)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_04</name>
+			<cname>(专项4)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_04</name>
+			<cname>(专项4)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_05</name>
+			<cname>(专项5)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_05</name>
+			<cname>(专项5)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_06</name>
+			<cname>(专项6)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_06</name>
+			<cname>(专项6)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_07</name>
+			<cname>(专项7)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_07</name>
+			<cname>(专项7)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_08</name>
+			<cname>(专项8)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_08</name>
+			<cname>(专项8)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_09</name>
+			<cname>(专项9)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_09</name>
+			<cname>(专项9)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_10</name>
+			<cname>(专项10)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_10</name>
+			<cname>(专项10)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_11</name>
+			<cname>(专项11)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_11</name>
+			<cname>(专项11)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_12</name>
+			<cname>(专项12)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_12</name>
+			<cname>(专项12)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_13</name>
+			<cname>(专项13)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_13</name>
+			<cname>(专项13)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_14</name>
+			<cname>(专项14)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_14</name>
+			<cname>(专项14)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_15</name>
+			<cname>(专项15)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_15</name>
+			<cname>(专项15)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_16</name>
+			<cname>(专项16)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_16</name>
+			<cname>(专项16)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_17</name>
+			<cname>(专项17)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_17</name>
+			<cname>(专项17)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_18</name>
+			<cname>(专项18)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_18</name>
+			<cname>(专项18)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_19</name>
+			<cname>(专项19)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_19</name>
+			<cname>(专项19)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_20</name>
+			<cname>(专项20)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_20</name>
+			<cname>(专项20)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_21</name>
+			<cname>(专项21)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_21</name>
+			<cname>(专项21)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_22</name>
+			<cname>(专项22)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_22</name>
+			<cname>(专项22)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_23</name>
+			<cname>(专项23)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_23</name>
+			<cname>(专项23)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_24</name>
+			<cname>(专项24)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_24</name>
+			<cname>(专项24)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_25</name>
+			<cname>(专项25)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_25</name>
+			<cname>(专项25)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_26</name>
+			<cname>(专项26)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_26</name>
+			<cname>(专项26)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_27</name>
+			<cname>(专项27)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_27</name>
+			<cname>(专项27)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_28</name>
+			<cname>(专项28)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_28</name>
+			<cname>(专项28)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_29</name>
+			<cname>(专项29)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_29</name>
+			<cname>(专项25)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_30</name>
+			<cname>(专项25)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_30</name>
+			<cname>(专项30)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_31</name>
+			<cname>(专项31)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_31</name>
+			<cname>(专项31)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_32</name>
+			<cname>(专项32)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_32</name>
+			<cname>(专项32)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_33</name>
+			<cname>(专项33)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_33</name>
+			<cname>(专项33)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_34</name>
+			<cname>(专项34)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_34</name>
+			<cname>(专项34)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_35</name>
+			<cname>(专项35)核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_35</name>
+			<cname>(专项35)核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODEALLSTR</name>
+			<cname>当前账户所有专项对象代码值</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAMEALLSTR</name>
+			<cname>当前账户所有专项对象信息描述</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_PATHALLSTR</name>
+			<cname>当前账户所有专项对象路径信息值</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_VIEWALLSTR</name>
+			<cname>当前账户所有专项类型信息描述</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_STATUS</name>
+			<cname>账银对账标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_BILLDETAILID</name>
+			<cname>银行对账单对应唯一记录ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_DATE</name>
+			<cname>账银对账日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_USERID</name>
+			<cname>账银对账人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_USERNAME</name>
+			<cname>账银对账人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING1</name>
+			<cname>备注字段1</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>STANDBY_STRING2</name>
+			<cname>备注字段2</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>STANDBY_STRING3</name>
+			<cname>备注字段3</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>UPDATE_SPSTRING</name>
+			<cname>刷新数据辅助字符</cname>
+			<type/>
+			<forignkey/>
+			<fieldType>C</fieldType>
+		</field>		
+	</table>
+	<table name="FINANCE_VOUMODULE" cname="凭证模板表" fathertablename=""
+		mode="1" keyfieldname="CORPID,BILLID" groupkeyfield="" authmode="1">
+		
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>模板BILLID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_CODE</name>
+			<cname>凭证类型代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUTYPE_NAME</name>
+			<cname>凭证类型名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板编码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_NAME</name>
+			<cname>模板名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_TYPE</name>
+			<cname>模板类型</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>USERID</name>
+			<cname>(暂存凭证)用户ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>USERNAME</name>
+			<cname>(暂存凭证)用户名</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUM_ANNEXNUM</name>
+			<cname>附件张数</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ITEMNO</name>
+			<cname>分录号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>账户路径</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_KIND</name>
+			<cname>账户性质</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NBJYBZ</name>
+			<cname>内部交易标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_FLOORBZ</name>
+			<cname>底层标志</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CRDR</name>
+			<cname>方向</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AMT</name>
+			<cname>发生金额(本位币)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>DEAMT</name>
+			<cname>借方金额(本位币)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRAMT</name>
+			<cname>贷方金额(本位币)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>外币名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AMT_RATE_FC</name>
+			<cname>外币汇率</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AMT_FC</name>
+			<cname>发生金额(外币)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>DEAMT_FC</name>
+			<cname>借方金额(外币)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRAMT_FC</name>
+			<cname>贷方金额(外币)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>QUAN_UNIT</name>
+			<cname>数量单位</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>QUAN</name>
+			<cname>数量</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>DEQUAN</name>
+			<cname>借方数量</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRQUAN</name>
+			<cname>贷方数量</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>VOU_EXP</name>
+			<cname>凭证摘要</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_01</name>
+			<cname>(专项1)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_01</name>
+			<cname>(专项1)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_02</name>
+			<cname>(专项2)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_02</name>
+			<cname>(专项2)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_03</name>
+			<cname>(专项3)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_03</name>
+			<cname>(专项3)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_04</name>
+			<cname>(专项4)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_04</name>
+			<cname>(专项4)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_05</name>
+			<cname>(专项5)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_05</name>
+			<cname>(专项5)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_06</name>
+			<cname>(专项6)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_06</name>
+			<cname>(专项6)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_07</name>
+			<cname>(专项7)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_07</name>
+			<cname>(专项7)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_08</name>
+			<cname>(专项8)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_08</name>
+			<cname>(专项8)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_09</name>
+			<cname>(专项9)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_09</name>
+			<cname>(专项9)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_10</name>
+			<cname>(专项10)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_10</name>
+			<cname>(专项10)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_11</name>
+			<cname>(专项11)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_11</name>
+			<cname>(专项11)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_12</name>
+			<cname>(专项12)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_12</name>
+			<cname>(专项12)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_13</name>
+			<cname>(专项13)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_13</name>
+			<cname>(专项13)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_14</name>
+			<cname>(专项14)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_14</name>
+			<cname>(专项14)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_15</name>
+			<cname>(专项15)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_15</name>
+			<cname>(专项15)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_16</name>
+			<cname>(专项16)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_16</name>
+			<cname>(专项16)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_17</name>
+			<cname>(专项17)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_17</name>
+			<cname>(专项17)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_18</name>
+			<cname>(专项18)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_18</name>
+			<cname>(专项18)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_19</name>
+			<cname>(专项19)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_19</name>
+			<cname>(专项19)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_20</name>
+			<cname>(专项20)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_20</name>
+			<cname>(专项20)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_21</name>
+			<cname>(专项21)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_21</name>
+			<cname>(专项21)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_22</name>
+			<cname>(专项22)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_22</name>
+			<cname>(专项22)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_23</name>
+			<cname>(专项23)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_23</name>
+			<cname>(专项23)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_24</name>
+			<cname>(专项24)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_24</name>
+			<cname>(专项24)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_25</name>
+			<cname>(专项25)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_25</name>
+			<cname>(专项25)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_26</name>
+			<cname>(专项26)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_26</name>
+			<cname>(专项26)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_27</name>
+			<cname>(专项27)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_27</name>
+			<cname>(专项27)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_28</name>
+			<cname>(专项28)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_28</name>
+			<cname>(专项28)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_29</name>
+			<cname>(专项29)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_29</name>
+			<cname>(专项29)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_30</name>
+			<cname>(专项30)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_30</name>
+			<cname>(专项30)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_31</name>
+			<cname>(专项31)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_31</name>
+			<cname>(专项31)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_32</name>
+			<cname>(专项32)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_32</name>
+			<cname>(专项32)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_33</name>
+			<cname>(专项33)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_33</name>
+			<cname>(专项33)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_34</name>
+			<cname>(专项34)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_34</name>
+			<cname>(专项34)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_35</name>
+			<cname>(专项35)核算对象代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_35</name>
+			<cname>(专项35)核算对象名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODEALLSTR</name>
+			<cname>当前账户所有专项对象代码值</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAMEALLSTR</name>
+			<cname>当前账户所有专项对象名称值</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_PATHALLSTR</name>
+			<cname>当前账户所有专项对象路径信息值</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_VIEWALLSTR</name>
+			<cname>当前账户所有专项信息描述</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING1</name>
+			<cname>备注字段1</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING2</name>
+			<cname>备注字段2</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING3</name>
+			<cname>备注字段3</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>	
+	<table name="FINANCE_BUSINESSLIST" cname="待制单业务明细表"
+		fathertablename="" groupkeyfield="BILLID" mode="0" keyfieldname="BILLDETAIL_ID">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CODE</name>
+			<cname>业务单号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>业务单表单BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FORM_CLASSID</name>
+			<cname>业务单表单类ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>业务所属年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_MONTH</name>
+			<cname>业务所属月份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_CODE</name>
+			<cname>业务体系编码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_NAME</name>
+			<cname>业务体系名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_CONTENT</name>
+			<cname>业务体系简述</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>PAYMENT_DESC</name>
+			<cname>付款建议</cname>
+			<forignkey></forignkey>
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>PROJECT_CODE</name>
+			<cname>项目编码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>PROJECT_NAME</name>
+			<cname>项目名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_CODE</name>
+			<cname>申请部门代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_NAME</name>
+			<cname>申请部门</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERID</name>
+			<cname>申请人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERNAME</name>
+			<cname>申请人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_DATE</name>
+			<cname>申请日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHSTATUS</name>
+			<cname>流程完成标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHDATE</name>
+			<cname>流程完成日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TREAS_USERID</name>
+			<cname>待制单人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TREAS_USERNAME</name>
+			<cname>待制单人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_KIND</name>
+			<cname>出纳业务种类</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOU_BILLID</name>
+			<cname>对应凭证BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOU_CODE</name>
+			<cname>凭证号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_LOCKSTATUS</name>
+			<cname>生成出纳日记账锁定状态</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_CPSTATUS</name>
+			<cname>呈批状态</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CHECK_AMOUNT_EXECUTE</name>
+			<cname>出纳日记帐已记帐金额</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>AFFIX_LINKADDR_MX</name>
+			<cname>明细附件链接地址</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AFFIX_VIEWDESC_MX</name>
+			<cname>明细附件说明</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING1</name>
+			<cname>备注字段1</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING2</name>
+			<cname>备注字段2</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING3</name>
+			<cname>备注字段3</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING4</name>
+			<cname>备注字段4</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING5</name>
+			<cname>备注字段5</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>STANDBY_STRING6</name>
+			<cname>备注字段6</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>YW_TYPE</name>
+			<cname>收支属性</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JS_TYPE_CODE</name>
+			<cname>结算方式代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JS_TYPE_NAME</name>
+			<cname>结算方式</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DETAIL_DESCRIPTION</name>
+			<cname>摘要</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CHECK_AMOUNT</name>
+			<cname>金额</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>SUM_CHECK_AMOUNT</name>
+			<cname>本单收付(含税)金额(原币合计)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>SUM_CHECK_AMOUNT_RMB</name>
+			<cname>本单收付(含税)金额(人民币合计)</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_CODE</name>
+			<cname>他方单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_NAME</name>
+			<cname>他方单位</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_BANK</name>
+			<cname>他方单位开户银行</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_ACCOUNT</name>
+			<cname>他方单位银行帐号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_ACCOUNTNAME</name>
+			<cname>他方单位开户名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_REGION</name>
+			<cname>他方单位开户行省份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_CITY</name>
+			<cname>他方单位所属城市</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_CODE</name>
+			<cname>我方单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_NAME</name>
+			<cname>我方单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_BANK</name>
+			<cname>我方开户银行</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNT</name>
+			<cname>我方银行帐号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNTNAME</name>
+			<cname>我方开户名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_REGION</name>
+			<cname>我方开户行省份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_CITY</name>
+			<cname>我方开户行所属城市</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLDETAIL_ID</name>
+			<cname>明细BILLDETAIL_ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SORT_NUM</name>
+			<cname>序号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>NOTE_CODE</name>
+			<cname>(暂不用)票据号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_SEIAL_NO</name>
+			<cname>(暂不用)出纳日记账序列号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_DEPARTMENT_CODE</name>
+			<cname>(暂不用)出纳登记部门代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_DEPARTMENT_NAME</name>
+			<cname>(暂不用)出纳登记部门</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_APPLY_USERID</name>
+			<cname>(暂不用)出纳登记人ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_APPLY_USERNAME</name>
+			<cname>(暂不用)出纳登记人</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_APPLY_DATE</name>
+			<cname>(暂不用)出纳登记日期</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_DIARYSTATUS</name>
+			<cname>(暂不用)出纳日记账记账状态</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_BUSINESSLIST_CASHMX" cname="待制单记出纳日记账明细表"
+		fathertablename="" mode="1" keyfieldname="BILLDETAIL_ID" groupkeyfield="BUSINESS_KEY" authmode="0;1;2">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>表单ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPSHORT</name>
+			<cname>集团简称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CODE</name>
+			<cname>表单流水号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_KEY</name>
+			<cname>其它主键</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>YW_TYPE</name>
+			<cname>收支属性</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>业务年份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_MONTH</name>
+			<cname>业务月份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>NOTE_CODE</name>
+			<cname>票据号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASH_SERIAL_NO</name>
+			<cname>出纳日记帐序列号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JS_TYPE_CODE</name>
+			<cname>结算方式</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JS_TYPE_NAME</name>
+			<cname>结算方式名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_CODE</name>
+			<cname>他方单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_NAME</name>
+			<cname>他方单位</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_BANK</name>
+			<cname>他方单位开户银行</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_ACCOUNT</name>
+			<cname>他方单位银行账号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_ACCOUNTNAME</name>
+			<cname>他方单位开户名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_CODE</name>
+			<cname>我方单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_NAME</name>
+			<cname>我方单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_BANK</name>
+			<cname>我方开户银行</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNT</name>
+			<cname>我方银行账号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNTNAME</name>
+			<cname>我方开户名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_DATE</name>
+			<cname>登记日期</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERID</name>
+			<cname>登记人ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERNAME</name>
+			<cname>登记人名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_CODE</name>
+			<cname>登记部门代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_NAME</name>
+			<cname>登记部门名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLDETAIL_ID</name>
+			<cname>明细BILLDETAIL_ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SORT_NUM</name>
+			<cname>序号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>BLIST_BILLID</name>
+			<cname>对应待制单BILLID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BLIST_DEATILID</name>
+			<cname>对应待制单明细ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CHECK_AMOUNT</name>
+			<cname>金额</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>NOTELISTMX_STRING1</name>
+			<cname>备注字段1</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>NOTELISTMX_STRING2</name>
+			<cname>备注字段2</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>NOTELISTMX_STRING3</name>
+			<cname>备注字段3</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_MODELPRT" cname="单据打印格式表" fathertablename=""
+		mode="0" keyfieldname="MOD_ID" groupkeyfield="CORPID,BUSINESS_YEAR,MOD_SYS,MOD_TYPE" authmode="0;1;2">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_ID</name>
+			<cname>模板ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_CODE</name>
+			<cname>模板编号</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_NAME</name>
+			<cname>模板名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_TYPE</name>
+			<cname>模板类别</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_SYS</name>
+			<cname>是否系统模板</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_FILEID</name>
+			<cname>模板文件ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MOD_PRINTER</name>
+			<cname>模板使用的打印机名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_PRTFORMAT" cname="清单、账簿打印格式表"
+		fathertablename="" mode="0" keyfieldname="CORPID,BUSINESS_YEAR,OPF_DEFAULT,OPF_FMTTYPE,OPF_FMTCODE,OPF_USERID" 
+		groupkeyfield="CORPID,BUSINESS_YEAR,OPF_DEFAULT,OPF_FMTTYPE,OPF_FMTCODE " authmode="0">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位唯一ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>年份</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OPF_FMTTYPE</name>
+			<cname>类别标志</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OPF_FMTCODE</name>
+			<cname>格式代码</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OPF_FMTNAME</name>
+			<cname>格式名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>OPF_USERID</name>
+			<cname>用户ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OPF_DEFAULT</name>
+			<cname>缺省标志</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OPF_FILEID</name>
+			<cname>格式文件ID</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OPF_PRINTER</name>
+			<cname>格式使用的打印机名称</cname>
+			<type>2</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_CASHACCOUNT" cname="出纳日记账" fathertablename=""
+		mode="1" authmode="0;1" keyfieldname="CORPID,BILLID,BILLDETAIL_ID"
+		groupkeyfield="CORPID,BILLID">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASHACCOUNT_LY</name>
+			<cname>出纳数据来源</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CODE</name>
+			<cname>业务单号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>表单BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SERIAL_NO</name>
+			<cname>日记账序列号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>YW_TYPE</name>
+			<cname>收支属性</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>业务所属年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_MONTH</name>
+			<cname>业务所属月份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_WEEK</name>
+			<cname>业务所属周</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASHIERTYPE_CODE</name>
+			<cname>出纳业务类型代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASHIERTYPE_NAME</name>
+			<cname>出纳业务类型名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_CODE</name>
+			<cname>我方单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_NAME</name>
+			<cname>我方单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_BANKCODE</name>
+			<cname>我方单位开户银行代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_BANK</name>
+			<cname>我方单位开户银行</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNT</name>
+			<cname>我方单位银行账号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNTNAME</name>
+			<cname>我方单位账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_CODE</name>
+			<cname>币种代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>币种名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_CODE</name>
+			<cname>往来单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_NAME</name>
+			<cname>往来单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_BANK</name>
+			<cname>往来单位开户行</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_ACCOUNT</name>
+			<cname>往来单位银行账号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUPPLIER_ACCOUNTNAME</name>
+			<cname>往来单位账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JS_TYPE_CODE</name>
+			<cname>结算方式</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>JS_TYPE_NAME</name>
+			<cname>结算方式名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>NOTE_COUNT</name>
+			<cname>票据张数</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>NOTE_CODE</name>
+			<cname>票据号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CASHIERIN_AMOUNT</name>
+			<cname>本单收款金额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CASHIEROUT_AMOUNT</name>
+			<cname>本单付款金额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MAIN_CONTENT</name>
+			<cname>摘要</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_CODE</name>
+			<cname>业务体系编码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_NAME</name>
+			<cname>业务体系名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_CONTENT</name>
+			<cname>业务体系简述</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_CODE</name>
+			<cname>申请部门代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_NAME</name>
+			<cname>申请部门</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERID</name>
+			<cname>申请人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERNAME</name>
+			<cname>申请人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_DATE</name>
+			<cname>申请日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INPUT_USERID</name>
+			<cname>录入人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INPUT_USERNAME</name>
+			<cname>录入人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INPUT_DATE</name>
+			<cname>录入日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHSTATUS</name>
+			<cname>流程完成标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHDATE</name>
+			<cname>流程完成日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOU_BILLID</name>
+			<cname>对应凭证BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOU_CODE</name>
+			<cname>对应凭证编号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>VOU_ITEMNO</name>
+			<cname>对应凭证分录号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_STATUS</name>
+			<cname>对账标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_BILLDETAILID</name>
+			<cname>银行对账单对应唯一记录ID串</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_DATE</name>
+			<cname>对账日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_USERID</name>
+			<cname>对账人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_USERNAME</name>
+			<cname>对账人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLDETAIL_ID</name>
+			<cname>出纳日记账明细ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>SORT_NUM</name>
+			<cname>序号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>DEAL_DATE</name>
+			<cname>收款日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CUSTOMER_CODE</name>
+			<cname>用户编号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SFTYPE_CODE</name>
+			<cname>收支方式代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SFTYPE_NAME</name>
+			<cname>收支方式名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FEETYPE_CODE</name>
+			<cname>费用类别代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FEETYPE_NAME</name>
+			<cname>费用类别名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE</name>
+			<cname>现金流量项目代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME</name>
+			<cname>现金流量项目名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_CODE</name>
+			<cname>资金来源代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SOURCE_NAME</name>
+			<cname>资金来源名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>				
+		<field>
+			<name>DETAIL_DESCRIPTION</name>
+			<cname>明细备注</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>	
+		<field>
+			<name>OTHER_CHAR01</name>
+			<cname>备注字段01</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR02</name>
+			<cname>备注字段02</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR03</name>
+			<cname>备注字段03</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR04</name>
+			<cname>备注字段04</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR05</name>
+			<cname>备注字段05</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR06</name>
+			<cname>备注字段06</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR07</name>
+			<cname>备注字段07</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_CHAR08</name>
+			<cname>备注字段08</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>OTHER_FLOAT1</name>
+			<cname>数字型字段1</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>																
+	</table>
+	<table name="FINANCE_BANKACCOUNT" cname="银行对账单台账" mode="0" authmode="0;1" keyfieldname="CORPID,BILLID,BILLDETAIL_ID" groupkeyfield="CORPID,BILLID">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>表单BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>对账期间年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_MONTH</name>
+			<cname>对账期间月份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_BANK</name>
+			<cname>我方单位开户银行</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNT</name>
+			<cname>我方单位银行账号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNTNAME</name>
+			<cname>我方单位账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_CODE</name>
+			<cname>币种代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>币种名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_CODE</name>
+			<cname>登记部门代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_NAME</name>
+			<cname>登记部门</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERID</name>
+			<cname>登记人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERNAME</name>
+			<cname>登记人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_DATE</name>
+			<cname>登记日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SORT_NUM</name>
+			<cname>序号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>BILLDETAIL_ID</name>
+			<cname>明细ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SERIAL_NO</name>
+			<cname>日记账序列号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEAL_DATE</name>
+			<cname>交易日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEAL_CODE</name>
+			<cname>交易码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>NOTE_CODE</name>
+			<cname>票据号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>YW_TYPE</name>
+			<cname>收支属性</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TF_NAME</name>
+			<cname>往来单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TF_BANK</name>
+			<cname>往来单位开户行</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TF_ACCOUNT</name>
+			<cname>往来单位账号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>						
+		<field>
+			<name>ACCOUNTIN_AMOUNT</name>
+			<cname>对账单收款金额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>ACCOUNTOUT_AMOUNT</name>
+			<cname>对账单付款金额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MAIN_CONTENT</name>
+			<cname>摘要</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUCHER_KIND</name>
+			<cname>凭证种类</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ACCOUNT_BALANCE</name>
+			<cname>账户余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>BANK_SHORT</name>
+			<cname>银行网点儿代号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_BILLID</name>
+			<cname>出纳日记账BILLID串</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_STATUS</name>
+			<cname>对账标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_DATE</name>
+			<cname>对账日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_USERID</name>
+			<cname>对账人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BALANCE_USERNAME</name>
+			<cname>对账人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>IN_PERSON</name>
+			<cname>收费员名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>IN_PERSONCODE</name>
+			<cname>收费员代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_BALANCEADJUST" cname="余额调节表" fathertablename="" mode="1" authmode="0;1" keyfieldname="CORPID,WF_ACCOUNT,BUSINESS_KEY" groupkeyfield="CORPID,WF_ACCOUNT,BUSINESS_KEY">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CODE</name>
+			<cname>业务单号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>表单BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_YEAR</name>
+			<cname>业务所属年份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_MONTH</name>
+			<cname>业务所属月份</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BUSINESS_KEY</name>
+			<cname>业务其它关键字</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>		
+		<field>
+			<name>WF_BANK</name>
+			<cname>我方单位开户银行</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNT</name>
+			<cname>我方单位银行账号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>WF_ACCOUNTNAME</name>
+			<cname>我方单位账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_CODE</name>
+			<cname>币种代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>币种名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>ADJUSTCASH_IN_AMOUNT</name>
+			<cname>银行已收企业未收金额（加）</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>ADJUSTCASH_OUT_AMOUNT</name>
+			<cname>银行已付企业未付金额（减）</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>ADJUSTCASH_FOREBALANCE</name>
+			<cname>出纳日记账调节前余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>		
+		<field>
+			<name>ADJUSTCASH_BALANCE</name>
+			<cname>出纳日记账调节后余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>ADJUSTBANK_IN_AMOUNT</name>
+			<cname>企业已收银行未收金额（加）</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>ADJUSTBANK_OUT_AMOUNT</name>
+			<cname>企业已付银行未付金额（减）</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>ADJUSTBANK_FOREBALANCE</name>
+			<cname>银行对账单调节前余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>		
+		<field>
+			<name>ADJUSTBANK_BALANCE</name>
+			<cname>银行对账单调节后余额</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>MAIN_CONTENT</name>
+			<cname>摘要</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DESCRIPTION</name>
+			<cname>备注</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_CODE</name>
+			<cname>申请部门代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEPARTMENT_NAME</name>
+			<cname>申请部门</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERID</name>
+			<cname>申请人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_USERNAME</name>
+			<cname>申请人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>APPLY_DATE</name>
+			<cname>截止日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INPUT_USERID</name>
+			<cname>录入人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INPUT_USERNAME</name>
+			<cname>录入人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>INPUT_DATE</name>
+			<cname>录入日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHSTATUS</name>
+			<cname>流程完成标志</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FLOW_FINISHDATE</name>
+			<cname>流程完成日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUMB_DYSIAC" cname="自动转账模板与专项核算对应关系表" fathertablename="" mode="1" authmode="0;1" keyfieldname="CORPCODE" groupkeyfield="CORPCODE">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type>0</type>
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>MODEL_CODE</name>
+			<cname>模板代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>VOUMB_DETAILID</name>
+			<cname>对应凭证分录ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_CODE</name>
+			<cname>专项核算类型编码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACTYPE_NAME</name>
+			<cname>专项核算类型名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_STR</name>
+			<cname>专项核算对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_STR</name>
+			<cname>专项核算对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUINFO_SPECOBJ" cname="凭证现金流量专项明细表" fathertablename="" mode="" keyfieldname="">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>凭证BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_CODE</name>
+			<cname>现金流量账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_NAME</name>
+			<cname>现金流量账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>AC_PATH</name>
+			<cname>现金流量账户路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CRDR</name>
+			<cname>现金流量账户方向</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CURRENCY_NAME</name>
+			<cname>外币名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SUM_DEAMT</name>
+			<cname>借方金额(本位币合计)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>SUM_CRAMT</name>
+			<cname>贷方金额(本位币合计)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>TF_ITEMNO</name>
+			<cname>对方分录号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TF_AC_CODE</name>
+			<cname>对方账户代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>TF_AC_NAME</name>
+			<cname>对方账户名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_CODE_00</name>
+			<cname>现金流量对象代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SIACOBJ_NAME_00</name>
+			<cname>现金流量对象名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>DEAMT</name>
+			<cname>借方金额(本位币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+		<field>
+			<name>CRAMT</name>
+			<cname>贷方金额(本位币)</cname>
+			<type />
+			<forignkey />
+			<fieldType>N</fieldType>
+		</field>
+	</table>
+	<table name="FINANCE_VOUAFFIX" cname="凭证附件表" fathertablename="" authmode="1" mode="1" keyfieldname="" groupkeyfield="BILLID">
+		<field>
+			<name>ID</name>
+			<cname>ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>BILLID</name>
+			<cname>凭证BILLID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPID</name>
+			<cname>集团单位ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPCODE</name>
+			<cname>集团单位代码</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>CORPNAME</name>
+			<cname>集团单位名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>SORT_NUM</name>
+			<cname>序号</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_ID</name>
+			<cname>文件ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_NAME</name>
+			<cname>文件名称</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_TITLE</name>
+			<cname>标题</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_PATH</name>
+			<cname>文件路径</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_DATE</name>
+			<cname>上传日期</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_USERID</name>
+			<cname>上传人ID</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_USERNAME</name>
+			<cname>上传人</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+		<field>
+			<name>FILE_DESC</name>
+			<cname>补充说明</cname>
+			<type />
+			<forignkey />
+			<fieldType>C</fieldType>
+		</field>
+	</table>
+</root>
